@@ -8,6 +8,7 @@ sap.ui.define([
 	return UIComponent.extend("Route.demoRoute.Component", {
 
 		metadata: {
+			
 			manifest: "json"
 		},
 		
