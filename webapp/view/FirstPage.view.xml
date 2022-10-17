@@ -1,0 +1,16 @@
+<mvc:View controllerName="Route.demoRoute.controller.FirstPage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List items="{/Products}">
+							<ObjectListItem title="{ProductName}" type="Navigation" press="onCLick">
+							</ObjectListItem>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,30 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Route.demoRoute.controller.detailPage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Detail">
+				
+				<HBox  height="20%" alignItems="End">
+					    <Button text="Back" press=".onBack"/>
+					</HBox>
+				
+				<IconTabBar id="idIconTabBarNoIcons" selectedKey="{DetailSelection>/tab}"  class="sapUiResponsiveContentPadding" select="Onselect">
+					<items>
+						<IconTabFilter text="Product Name" key="ProductName">
+							<Text text="{ProductName}"/>
+						</IconTabFilter>
+						<IconTabFilter text="Product Id" key="ProductId">
+							<Text text="{ProductID}"/>
+						</IconTabFilter>
+						<IconTabFilter text="Supplier Price" key="Supplier" >
+						
+						</IconTabFilter>
+						<IconTabFilter text="Discontinued" key="Discontinued">
+							<Text text="{Discontinued}"/>
+						</IconTabFilter>
+					</items>
+				</IconTabBar>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
