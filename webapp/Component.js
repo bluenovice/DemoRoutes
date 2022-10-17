@@ -25,11 +25,8 @@ sap.ui.define([
 
 			// enable routing
 			this.getRouter().initialize();
-
-			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
-		//	var sProduct = new sap.ui.model.json.JSONModel("/V3/");
-		//	this.setModel(sProduct,"Users");
+
 		}
 	});
 });
